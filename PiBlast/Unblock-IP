@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Enter Fail2Ban Jail name: " JAIL
+read -p "Enter Ip You wish to unblock: " IP
+sudo fail2ban-client set ${JAIL} unbanip ${IP}

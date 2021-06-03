@@ -1,0 +1,3 @@
+#!/bin/sh
+read -p "Enter IP Adress to Block: " ip
+sudo fail2ban-client set manban banip ${ip}
